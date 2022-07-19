@@ -1,0 +1,108 @@
+.navbar {
+	// Root Styles.
+	@apply absolute inset-0 z-40 w-full h-20 flex items-center bg-transparent overflow-hidden;
+
+	&.fixtop {
+		@apply fixed bg-white shadow animate-slide-in-down;
+	}
+
+	@screen md {
+		@apply h-[90px];
+	}
+
+	// Navbar Body.
+	&_body {
+		@apply flex items-center;
+	}
+
+	// Navbar Logo.
+	&_logo {
+		@apply block w-20;
+
+		@screen lg {
+			@apply w-28;
+		}
+	}
+
+	// Navbar Menu
+	.nav_menu {
+		@apply hidden flex-1;
+
+		@screen lg {
+			@apply block;
+		}
+
+		ul {
+			@apply flex items-center justify-center flex-wrap gap-12;
+
+			@screen md {
+				@apply gap-8;
+			}
+
+			@screen xl {
+				@apply gap-12;
+			}
+		}
+
+		a,
+		a:link,
+		a:visited {
+			@apply relative block text-gray-900 text-sm font-normal cursor-pointer leading-none transition-all duration-200 backface-hidden;
+
+			&:hover {
+				@apply text-gray-500;
+			}
+
+			&::before {
+				content: '';
+
+				@apply block h-[3px] absolute top-5 transform -translate-x-2/4 origin-left opacity-0 scale-x-0 rounded-full transition-all duration-300 backface-hidden;
+			}
+
+			&::before {
+				@apply w-6 h-[3px] left-2/4 bg-primary-400;
+			}
+
+			&.active {
+				@apply text-primary-400 font-semibold;
+
+				&::before,
+				&::after {
+					@apply opacity-100 scale-x-100;
+				}
+			}
+		}
+	}
+
+	// Call To Action.
+	&_cta {
+		@apply ml-auto px-4 #{!important};
+
+		@screen lg {
+			@apply px-8 #{!important};
+		}
+	}
+
+	// Navbar Menu Toogle.
+	&_menu_toogle {
+		@apply block p-1 mr-4 text-2xl text-gray-900 rounded-sm border border-dotted border-transparent;
+
+		&:hover {
+			@apply text-gray-900;
+		}
+
+		&:active,
+		&:focus,
+		&:focus-visible {
+			@apply outline-none border-gray-600;
+		}
+
+		span[role='img'] {
+			@apply text-2xl;
+		}
+
+		@screen lg {
+			@apply hidden;
+		}
+	}
+}

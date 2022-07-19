@@ -1,0 +1,34 @@
+.booking_form {
+	@apply w-full flex flex-col gap-6 justify-center;
+
+	&_heading {
+		@apply text-xl text-gray-900 font-bold leading-snug;
+
+		span {
+			@apply text-primary-400 italic;
+		}
+	}
+
+	// Booking Form Body.
+	&_body {
+		@apply w-full flex flex-col gap-4;
+
+		@screen lg {
+			@apply flex-row items-end;
+		}
+	}
+
+	// Booking Form Row.
+	&_row {
+		@apply flex-1 flex flex-col gap-4;
+
+		@screen sm {
+			@apply flex-row;
+		}
+	}
+
+	// Booking Form Group.
+	&_group {
+		@apply flex-1;
+	}
+}

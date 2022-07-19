@@ -1,0 +1,95 @@
+.fleet {
+	@apply flex flex-col gap-12;
+
+	@screen lg {
+		@apply gap-16;
+	}
+
+	// Fleet Tabs.
+	&_tabs {
+		@apply flex items-center justify-center flex-wrap gap-3;
+
+		button.btn {
+			@apply min-h-[32px] px-3 bg-white text-gray-700 font-medium border border-gray-300;
+
+			&:hover {
+				@apply bg-gray-50 border-gray-400;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-visible {
+				@apply bg-gray-50 outline-gray-500;
+			}
+
+			&.active {
+				@apply bg-primary-400 text-white border-primary-400;
+
+				&:hover {
+					@apply bg-primary-300;
+				}
+
+				&:active,
+				&:focus,
+				&:focus-visible {
+					@apply bg-primary-300 outline-none;
+				}
+			}
+		}
+	}
+
+	// Fleet Collection.
+	&_collection {
+		&_item {
+			@apply px-2;
+		}
+
+		&_nav {
+			@apply mt-5 text-center;
+
+			@screen md {
+				@apply mt-8;
+			}
+
+			@screen lg {
+				@apply mt-10;
+			}
+
+			li {
+				@apply inline-block;
+
+				&:not(:last-child) {
+					@apply mr-2;
+				}
+			}
+
+			button {
+				@apply text-[0px];
+
+				&:hover,
+				&:focus,
+				&:focus-visible {
+					@apply outline-none;
+				}
+
+				&::after {
+					content: '';
+
+					@apply block w-2 h-2 rounded-full bg-primary-400 transition-all duration-200;
+				}
+
+				&:hover::after,
+				&:focus::after,
+				&:focus-visible::after {
+					@apply bg-primary-300;
+				}
+			}
+
+			:global(.slick-active) {
+				button::after {
+					@apply w-4;
+				}
+			}
+		}
+	}
+}

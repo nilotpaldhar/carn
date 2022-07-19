@@ -1,0 +1,71 @@
+.select {
+	@apply relative w-full flex flex-col gap-2;
+
+	// Select Label.
+	&_label {
+		@apply text-sm text-gray-900 font-semibold leading-snug select-none;
+	}
+
+	// Select Button.
+	&_btn {
+		@apply text-gray-500 text-sm flex items-center h-11 p-2 w-full border border-gray-200 rounded transition-all duration-200;
+
+		&:hover {
+			@apply border-gray-300 text-gray-500;
+		}
+
+		&:active,
+		&:focus,
+		&:focus-visible {
+			@apply outline-gray-400 text-gray-700;
+		}
+
+		&_iconleft {
+			span[role='img'] {
+				@apply text-sm;
+			}
+		}
+
+		&_iconright {
+			@apply ml-auto;
+
+			span[role='img'] {
+				@apply text-sm;
+			}
+		}
+
+		&_text {
+			@apply text-sm ml-2 font-normal;
+		}
+	}
+
+	// Select Options.
+	&_options {
+		@apply absolute top-[105%] z-30 max-h-[168px] w-full py-1 bg-white shadow-2xl overflow-auto scrollbar-thin border border-gray-100 rounded-sm;
+
+		&:focus,
+		&:focus-visible {
+			@apply outline-none;
+		}
+	}
+
+	// Select Option.
+	&_option {
+		@apply w-full flex items-center px-4 h-8 text-sm bg-white cursor-pointer;
+
+		&:hover,
+		&.active {
+			@apply bg-gray-100;
+		}
+
+		&::focus,
+		&::focus-visible,
+		&::focus-within {
+			@apply bg-blue-600;
+		}
+
+		&.selected {
+			@apply bg-primary-400 text-white;
+		}
+	}
+}

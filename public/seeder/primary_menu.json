@@ -1,0 +1,27 @@
+[
+  {
+    "id": "62c670c9991d299994cb80d0",
+    "label": "Home",
+    "path": "/home"
+  },
+  {
+    "id": "62c670c9228e06b450c803a2",
+    "label": "Services",
+    "path": "/services"
+  },
+  {
+    "id": "62c670c99fb9eb853a91bc3a",
+    "label": "Fleet",
+    "path": "/fleet"
+  },
+  {
+    "id": "62c670c9d8054277dee334f9",
+    "label": "Testimonials",
+    "path": "/testimonials"
+  },
+  {
+    "id": "62c6ddbcb1b72d23d54fc6aa",
+    "label": "FAQs",
+    "path": "/faqs"
+  }
+]

@@ -1,0 +1,70 @@
+.footer {
+	// Root Styles.
+	@apply bg-gray-900 text-white pt-14 pb-10;
+
+	// Footer Summary.
+	&_summary {
+		@apply flex flex-col gap-10;
+
+		@screen lg {
+			@apply flex-row justify-between gap-0;
+		}
+	}
+
+	// Footer About.
+	&_about {
+		p {
+			@apply max-w-[32ch] text-sm font-light leading-loose my-4;
+		}
+
+		a:last-child {
+			@apply max-w-max flex items-center gap-1 pt-1 pb-2 text-sm font-light text-white border-b border-white border-opacity-30 leading-none rounded-sm;
+
+			&:hover {
+				@apply text-gray-300;
+			}
+
+			span[role='img'] {
+				@apply text-xs;
+			}
+		}
+	}
+
+	// Footer Menu.
+	&_menu {
+		&_title {
+			@apply text-base text-white font-semibold leading-normal mb-5;
+		}
+
+		nav ul {
+			@apply flex flex-col gap-4;
+
+			li {
+				&,
+				a {
+					@apply flex items-center gap-2 py-1 text-sm font-light text-white leading-none rounded-sm;
+				}
+
+				a:hover,
+				a:active,
+				a:focus,
+				a:focus-visible {
+					@apply text-gray-300;
+				}
+			}
+		}
+	}
+
+	// Footer Copyright.
+	&_copyright {
+		@apply pt-10 mt-10 border-t border-gray-800;
+
+		@screen lg {
+			@apply mt-20;
+		}
+
+		p {
+			@apply text-white font-light text-sm text-center leading-none;
+		}
+	}
+}

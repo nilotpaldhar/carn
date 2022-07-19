@@ -1,0 +1,77 @@
+button.button,
+a.button {
+	// Root Styles.
+	@apply inline-flex justify-center items-center gap-2 min-h-[44px] text-sm font-normal leading-snug bg-primary-400 text-white rounded border border-transparent py-0 px-8 transition;
+
+	&:hover {
+		@apply bg-primary-300 text-white;
+	}
+
+	&:active,
+	&:focus,
+	&:focus-visible {
+		@apply outline-dotted outline-1 outline-gray-400 bg-primary-300;
+	}
+
+	// Icon.
+	span,
+	span.icon,
+	span[role='img'] {
+		@apply text-inherit inline-block;
+	}
+
+	span[role='img'] {
+		@apply text-sm;
+	}
+
+	// Button Outline
+	&.outline {
+		@apply bg-transparent text-primary-400 border-primary-400;
+
+		&:hover,
+		&:active,
+		&:focus,
+		&:focus-visible {
+			@apply bg-primary-300 text-white;
+		}
+	}
+
+	// Button Icon.
+	&.icon {
+		@apply min-h-[44px];
+
+		&_left {
+			// Icon Left.
+			.text {
+				@apply order-last;
+			}
+		}
+
+		&_right {
+			// Icon Right.
+			.text {
+				@apply order-first;
+			}
+		}
+	}
+
+	// Button Circle.
+	&.circle {
+		@apply min-w-[44px] min-h-[44px] rounded-full p-0;
+	}
+
+	// Button Loading.
+	&.loading {
+		@apply min-h-[44px] cursor-default pointer-events-none opacity-70;
+	}
+
+	// Button Block.
+	&.block {
+		@apply w-full min-h-[44px];
+	}
+
+	// Button Disabled.
+	&[disabled] {
+		@apply cursor-not-allowed pointer-events-none select-none bg-gray-500 text-gray-200 border-transparent opacity-70;
+	}
+}

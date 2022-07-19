@@ -1,0 +1,31 @@
+.date_picker {
+	// Date Picker Label.
+	&_label {
+		@apply block text-sm text-gray-900 font-semibold leading-snug select-none mb-2;
+	}
+
+	// Date Picker Button.
+	&_btn {
+		@apply text-gray-500 text-sm flex items-center h-11 p-2 w-full border border-gray-200 rounded transition-all duration-200;
+
+		&:hover {
+			@apply border-gray-300 text-gray-500;
+		}
+
+		&:active,
+		&:focus,
+		&:focus-visible {
+			@apply outline-gray-400 text-gray-700;
+		}
+
+		&_icon {
+			span[role='img'] {
+				@apply text-sm;
+			}
+		}
+
+		&_text {
+			@apply text-sm ml-2 font-normal;
+		}
+	}
+}

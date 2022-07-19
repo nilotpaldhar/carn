@@ -1,0 +1,29 @@
+.list {
+	// Root Styles.
+	@apply flex flex-col gap-5;
+
+	// List Item.
+	&_item {
+		@apply max-w-max flex gap-3 items-center;
+
+		&_icon {
+			@apply w-4 h-4 flex items-center justify-center bg-transparent border border-primary-400 rounded-full;
+
+			@screen md {
+				@apply w-5 h-5;
+			}
+
+			span[role='img'] {
+				@apply text-sm text-primary-400;
+			}
+		}
+
+		&_content {
+			@apply flex-1 text-sm text-gray-900 font-normal leading-snug;
+
+			@screen md {
+				@apply text-base leading-snug;
+			}
+		}
+	}
+}

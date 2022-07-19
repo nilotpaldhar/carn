@@ -1,0 +1,46 @@
+{
+  "company": [
+    {
+      "id": "62c675f3114a301000d841b1",
+      "label": "About Us",
+      "path": "#"
+    },
+    {
+      "id": "62c675f3ae7e731890a4d4bb",
+      "label": "Contact",
+      "path": "#"
+    },
+    {
+      "id": "62c675f369cf4c51566ecc2b",
+      "label": "Career",
+      "path": "#"
+    },
+    {
+      "id": "62c675f3999897780a1a3f37",
+      "label": "Blog",
+      "path": "#"
+    }
+  ],
+  "support": [
+    {
+      "id": "62c675f331b8a7b03386c834",
+      "label": "Cars Details",
+      "path": "#"
+    },
+    {
+      "id": "62c675f3601dcc93e26a11a8",
+      "label": "FAQs",
+      "path": "#"
+    },
+    {
+      "id": "62c675f3b105090293e00c8b",
+      "label": "Terms & Conditions",
+      "path": "#"
+    }, 
+    {
+      "id": "62c675f30feaf0b1d95e57d7",
+      "label": "Privacy Policy",
+      "path": "#"
+    }
+  ]
+}

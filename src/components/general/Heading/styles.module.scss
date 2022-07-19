@@ -1,0 +1,56 @@
+.heading {
+	// Root Styles.
+	@apply flex flex-col gap-2;
+
+	// Title.
+	h2 {
+		@apply text-sm text-primary-400 font-medium leading-none tracking-[2px];
+	}
+
+	// Sub-Title.
+	p {
+		@apply text-xl text-gray-900 font-bold capitalize leading-tight;
+
+		@screen lg {
+			@apply text-[28px] leading-tight;
+		}
+	}
+
+	// Align Left.
+	&.left {
+		@apply justify-start;
+
+		h2,
+		p {
+			@apply text-left;
+		}
+	}
+
+	// Align Center.
+	&.center {
+		@apply justify-center;
+
+		h2,
+		p {
+			@apply text-center;
+		}
+	}
+
+	// Align Right.
+	&.right {
+		@apply justify-end;
+
+		h2,
+		p {
+			@apply text-right;
+		}
+	}
+
+	// Heading Light.
+	&.light {
+		h2,
+		p {
+			@apply text-white;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.faqs {
+	// Root Styles.
+	@apply flex flex-col gap-4;
+
+	// Faqs Item.
+	&_item {
+		@apply w-full px-4 py-4 shadow bg-white text-gray-700;
+
+		@screen md {
+			@apply px-8 py-5;
+		}
+
+		&_btn {
+			@apply w-full py-1 flex items-center justify-between gap-4 text-base text-gray-900 font-medium leading-relaxed;
+
+			&:hover,
+			&:active,
+			&:focus,
+			&:focus-visible {
+				@apply text-primary-400 outline-none;
+			}
+
+			&.open {
+				@apply text-primary-400;
+			}
+
+			.text {
+				@apply text-left;
+			}
+		}
+
+		&_panel {
+			@apply py-2 text-sm font-light text-current leading-loose;
+		}
+	}
+}

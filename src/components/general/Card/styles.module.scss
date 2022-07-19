@@ -1,0 +1,92 @@
+.card {
+	// Root Styles.
+	@apply max-w-xs h-[354px] mx-auto bg-white rounded border border-gray-100 overflow-hidden transition-all duration-200 backface-hidden;
+
+	&:hover,
+	&:focus-within {
+		@apply border-gray-200;
+	}
+
+	// Card Body.
+	&_body {
+		@apply w-full h-full flex flex-col gap-5 p-3;
+	}
+
+	// Card Thumbnail.
+	&_thumbnail {
+		@apply relative w-full min-h-[170px] flex items-center justify-center px-3 py-4 bg-gray-50 rounded;
+
+		&_fav {
+			@apply absolute top-3 right-3 w-6 h-6 flex justify-center items-center border border-dotted border-transparent rounded-full;
+
+			&:active,
+			&:focus,
+			&:focus-visible {
+				@apply border-gray-400 outline-none;
+			}
+
+			span[role='img'] {
+				@apply text-lg;
+			}
+		}
+	}
+
+	// Card Summary.
+	&_summary {
+		@apply flex flex-col gap-5;
+
+		&_info {
+			@apply flex items-center gap-2 border-b border-gray-100 pb-5;
+
+			&_item {
+				&:not(:last-child) {
+					@apply border-r border-gray-200 pr-2;
+				}
+			}
+
+			.model_name {
+				@apply text-sm text-gray-900 font-semibold leading-none;
+			}
+
+			.model_price {
+				@apply flex items-center gap-[2px];
+
+				span {
+					@apply text-sm text-primary-400 font-semibold leading-none;
+				}
+
+				span:last-child {
+					@apply text-[10px] transform translate-y-[2px];
+				}
+			}
+
+			.model_rating {
+				@apply flex items-center justify-center gap-1 p-[2px] bg-white border border-teal-600 rounded-sm;
+
+				span {
+					@apply text-[10px] text-teal-600 font-medium capitalize leading-none;
+				}
+			}
+		}
+
+		&_meta {
+			@apply flex items-center gap-3;
+
+			li {
+				@apply flex items-center gap-1;
+
+				span[role='img'] {
+					@apply text-sm;
+				}
+
+				span {
+					@apply text-xs text-gray-700 font-normal leading-none capitalize;
+				}
+			}
+		}
+
+		button.cta {
+			@apply min-h-[40px];
+		}
+	}
+}

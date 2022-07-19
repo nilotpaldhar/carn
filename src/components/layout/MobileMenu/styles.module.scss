@@ -1,0 +1,29 @@
+.mobile_menu {
+	// Root Styles.
+	@apply flex items-center;
+
+	// Mobile Menu Nav.
+	&_nav {
+		@apply h-full;
+
+		li:last-child {
+			a {
+				@apply border-transparent;
+			}
+		}
+
+		a {
+			@apply block p-5 text-sm font-normal text-gray-900 border-b bg-white border-gray-100 leading-none cursor-pointer transition-all duration-200;
+
+			&:hover {
+				@apply text-gray-900;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-visible {
+				@apply outline-none;
+			}
+		}
+	}
+}

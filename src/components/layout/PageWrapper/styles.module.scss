@@ -1,0 +1,12 @@
+.page_wrapper {
+	@apply pt-40 pb-20;
+
+	@screen md {
+		@apply pt-[186px] pb-24;
+	}
+
+	// No Space.
+	&.no_space {
+		@apply p-0;
+	}
+}

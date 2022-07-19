@@ -1,0 +1,39 @@
+.highlights {
+	// Root Styles.
+	@apply flex flex-wrap items-center justify-center gap-4;
+
+	@screen lg {
+		@apply gap-6 flex-nowrap;
+	}
+
+	// Highlights Item.
+	&_item {
+		box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.05), 0px 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+		@apply h-40 w-[calc(50%_-_1rem)] flex flex-col justify-center items-center gap-3 bg-white rounded;
+
+		@screen lg {
+			@apply w-48;
+		}
+
+		&_header {
+			@apply flex items-center justify-center gap-2;
+		}
+
+		&_icon {
+			@apply text-primary-400;
+
+			span[role='img'] {
+				@apply text-4xl;
+			}
+		}
+
+		&_title {
+			@apply text-lg text-primary-400 font-semibold leading-none;
+		}
+
+		&_body {
+			@apply text-base text-gray-900 font-normal leading-normal text-center;
+		}
+	}
+}

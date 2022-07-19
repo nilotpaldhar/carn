@@ -1,0 +1,164 @@
+{
+  "brands": [
+    {
+      "id": "824837fa-8ac4-4d78-9125-3f3556b4d1e8",
+      "name": "Honda",
+      "slug": "honda"
+    },
+    {
+      "id": "8f4a5cab-aba5-4b91-b556-395ce141cccb",
+      "name": "Ford",
+      "slug": "ford"
+    },
+    {
+      "id": "64fcd2fd-ef0e-4f5a-b8f4-763d88464ecb",
+      "name": "Nissan",
+      "slug": "nissan"
+    },
+    {
+      "id": "d2d57359-01e9-466e-bc59-6cb04cdf36dc",
+      "name": "Toyota",
+      "slug": "toyota"
+    }
+  ],
+  "cars": [
+    {
+      "id": "f5a031f5-3629-44f5-9ab3-ef1985ba7cbd",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda City",
+        "slug": "honda-city"
+      },
+      "rating": 4.5,
+      "price": "$60",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-city.png",
+        "alt": "honda city"
+      },
+      "meta": {
+        "seats": 4,
+        "transmission": "manual",
+        "fuel_type": "petrol"
+      }
+    },
+    {
+      "id": "1b5b3359-5e46-4f97-b8ce-9b512d9cc1fb",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda Civic",
+        "slug": "honda-civic"
+      },
+      "rating": 4.7,
+      "price": "$70",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-civic.png",
+        "alt": "honda civic"
+      },
+      "meta": {
+        "seats": 4,
+        "transmission": "manual",
+        "fuel_type": "petrol"
+      }
+    },
+    {
+      "id": "47da348a-be0a-4850-9028-73bc711e199c",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda Accord",
+        "slug": "honda-accord"
+      },
+      "rating": 4.6,
+      "price": "$100",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-accord.png",
+        "alt": "honda accord"
+      },
+      "meta": {
+        "seats": 4,
+        "transmission": "manual",
+        "fuel_type": "petrol"
+      }
+    },
+    {
+      "id": "1a486d20-e989-4416-aca9-1c187727a912",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda Amaze",
+        "slug": "honda-amaze"
+      },
+      "rating": 4.3,
+      "price": "$40",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-amaze.png",
+        "alt": "honda amaze"
+      },
+      "meta": {
+        "seats": 4,
+        "transmission": "manual",
+        "fuel_type": "petrol"
+      }
+    },
+    {
+      "id": "116dc26c-3925-4f33-8c0f-179ff765261e",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda Jazz",
+        "slug": "honda-jazz"
+      },
+      "rating": 4.4,
+      "price": "$50",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-jazz.png",
+        "alt": "honda jazz"
+      },
+      "meta": {
+        "seats": 5,
+        "transmission": "manual",
+        "fuel_type": "petrol"
+      }
+    },
+    {
+      "id": "75c6ae1e-a219-420e-a037-df1f3fc0fe99",
+      "brand": {
+        "name": "Honda",
+        "slug": "honda"
+      },
+      "model": {
+        "name": "Honda CR-V",
+        "slug": "honda-cr-v"
+      },
+      "rating": 4.5,
+      "price": "$60",
+      "duration": "day",
+      "image": {
+        "path": "/images/car/honda-cr-v.png",
+        "alt": "honda cr-v"
+      },
+      "meta": {
+        "seats": 5,
+        "transmission": "automatic",
+        "fuel_type": "petrol"
+      }
+    }
+  ]
+}

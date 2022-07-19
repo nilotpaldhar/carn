@@ -1,0 +1,24 @@
+.social_handles {
+	// Root Styles.
+	@apply flex items-center  gap-4;
+
+	a,
+	a:link,
+	a:visited {
+		@apply flex justify-center items-center w-8 h-8 text-sm text-white bg-gray-900 border border-white rounded-full;
+
+		&:hover {
+			@apply bg-primary-400 border-transparent;
+		}
+
+		&:active,
+		&:focus,
+		&:focus-visible {
+			@apply outline-gray-100 bg-gray-800;
+		}
+
+		span[role='img'] {
+			@apply text-sm;
+		}
+	}
+}

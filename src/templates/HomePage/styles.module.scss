@@ -1,0 +1,263 @@
+.home_page {
+	.section {
+		@apply py-12;
+
+		@screen lg {
+			@apply py-24;
+		}
+
+		// Section Hero.
+		&_hero {
+			@apply relative w-full flex items-center pt-28 pb-0 mb-20;
+
+			@screen lg {
+				@apply pt-40 pb-0 mb-24;
+			}
+
+			&::before {
+				content: '';
+				background-image: url('/images/stacked-steps-bg.png');
+
+				@apply block w-full h-full absolute inset-0 bg-no-repeat bg-cover bg-center;
+			}
+
+			&::after {
+				content: '';
+
+				@apply block w-full h-[27rem] absolute bottom-0 z-10 bg-white;
+
+				@screen sm {
+					@apply h-64;
+				}
+
+				@screen lg {
+					@apply h-24;
+				}
+			}
+
+			&_content {
+				@apply relative text-center z-10;
+
+				@screen lg {
+					@apply text-left;
+				}
+			}
+
+			&_heading {
+				@apply text-3xl text-gray-900 font-bold capitalize leading-snug;
+
+				@screen md {
+					@apply text-4xl leading-snug;
+				}
+
+				@screen xl {
+					@apply text-5xl leading-snug;
+				}
+			}
+
+			&_desc {
+				@apply text-base text-gray-900 font-normal leading-loose mt-2;
+			}
+
+			&_cta {
+				@apply flex flex-col items-center justify-center gap-2 mt-4;
+
+				@screen sm {
+					@apply flex-row;
+				}
+
+				@screen lg {
+					@apply justify-start gap-3 mt-5;
+				}
+
+				button {
+					@apply w-full;
+
+					@screen md {
+						@apply w-max;
+					}
+				}
+			}
+
+			&_img {
+				@screen sm {
+					@apply w-full;
+				}
+
+				@screen md {
+					@apply w-9/12 mx-auto mb-6;
+				}
+
+				@screen lg {
+					@apply w-full transform translate-x-6 m-0;
+				}
+			}
+
+			&_booking {
+				@apply relative mt-8 z-20;
+
+				@screen lg {
+					@apply mt-16;
+				}
+
+				&_content {
+					@apply w-full min-h-[160px] flex items-center transform translate-y-10 bg-white rounded;
+
+					@screen lg {
+						box-shadow: 0px 24px 30px -20px rgba(0, 0, 0, 0.05);
+
+						@apply h-48 translate-y-0 px-14 py-12;
+					}
+				}
+			}
+		}
+
+		// Section Services.
+		&_services {
+			@apply relative w-full py-12 my-12;
+
+			@screen lg {
+				@apply pt-24 py-0 my-24;
+			}
+
+			&::before {
+				content: '';
+				background-image: url('/images/stacked-steps-bg.png');
+
+				@apply block w-full h-full absolute inset-0 transform rotate-180 bg-no-repeat bg-cover bg-center;
+			}
+
+			&::after {
+				@screen lg {
+					content: '';
+
+					@apply block w-full h-20 absolute bottom-0 z-10 bg-white;
+				}
+			}
+
+			&_content {
+				@apply relative z-10 flex flex-col items-center gap-6;
+
+				@screen lg {
+					@apply items-start gap-8;
+				}
+
+				h2 {
+					@screen lg {
+						@apply text-left;
+					}
+				}
+
+				p {
+					@screen lg {
+						@apply text-left;
+					}
+				}
+
+				button {
+					@apply w-full;
+
+					@screen sm {
+						@apply max-w-max;
+					}
+				}
+
+				ul {
+					@apply items-center;
+
+					@screen lg {
+						@apply items-start;
+					}
+				}
+			}
+
+			&_img {
+				@apply hidden transform -translate-x-4;
+
+				@screen lg {
+					@apply block;
+				}
+			}
+
+			&_highlights {
+				@apply relative z-20 mt-10;
+
+				@screen md {
+					@apply mt-14;
+				}
+
+				@screen lg {
+					@apply mt-20;
+				}
+			}
+		}
+
+		// Section Share.
+		&_share {
+			@apply relative bg-gray-900 text-white py-10 my-12;
+
+			@screen xl {
+				@apply py-20 my-24;
+			}
+
+			&::before,
+			&::after {
+				content: '';
+
+				@apply hidden absolute top-0 right-0 z-10 bg-primary-400 h-full w-1/3;
+
+				@screen xl {
+					@apply block;
+				}
+
+				@screen 2xl {
+					@apply w-2/4;
+				}
+			}
+
+			&::before {
+				clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+
+				@apply bg-white transform -translate-x-16;
+			}
+
+			&::after {
+				clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+				@apply bg-primary-400;
+			}
+
+			&_content {
+				@apply relative z-20 text-center;
+
+				@screen xl {
+					@apply text-left;
+				}
+			}
+
+			&_img {
+				@apply hidden;
+
+				@screen xl {
+					@apply block;
+				}
+			}
+
+			&_heading {
+				@apply text-xl text-white font-bold capitalize leading-snug;
+
+				@screen xl {
+					@apply text-[28px] leading-snug;
+				}
+			}
+
+			&_desc {
+				@apply mt-4 mb-5 text-base text-white font-normal capitalize leading-snug;
+
+				@screen xl {
+					@apply mt-6 mb-8 text-xl font-medium leading-snug;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "62d18618dd371323d57dbac1",
+    "rating": 5,
+    "comment": "Molestie eget lacus, purus a, nullam amet enim, aliquet tellus habitant",
+    "user": {
+      "avatar": "/images/avatars/01.jpg",
+      "name": "Megan Parry",
+      "username": "megan"
+    }
+  },
+  {
+    "id": "62d1861884514974bf82f814",
+    "rating": 5,
+    "comment": "Rhoncus, viverra viverra eu a proin aliquam neque adipiscing amet aliquam velit",
+    "user": {
+      "avatar": "/images/avatars/02.jpg",
+      "name": "Jodie Reid",
+      "username": "jodie"
+    }
+  },
+  {
+    "id": "62d186189d15c560ad50c32b",
+    "rating": 4.7,
+    "comment": "Sit blandit at dignissim porttitor ultricies tellus pharetra vestibulum",
+    "user": {
+      "avatar": "/images/avatars/03.jpg",
+      "name": "Taylor Rowley",
+      "username": "taylor"
+    }
+  },
+  {
+    "id": "62d18618a00b8cd280d77f23",
+    "rating": 4.5,
+    "comment": "Felis morbi eget mi suspendisse proin aliquet. Nisi volutpat ligula",
+    "user": {
+      "avatar": "/images/avatars/04.jpg",
+      "name": "Bradley Hodgson",
+      "username": "bradley"
+    }
+  },
+  {
+    "id": "62d18618ac2cdc7da46d3dce",
+    "rating": 5,
+    "comment": "Consequat leo euismod a magna orci. Duis nisl non quisque sit",
+    "user": {
+      "avatar": "/images/avatars/05.jpg",
+      "name": "Spencer Wilkinson",
+      "username": "spencer"
+    }
+  },
+  {
+    "id": "62d18618c6f88dcc83ff3b11",
+    "rating": 5,
+    "comment": "Nec integer sit felis molestie sit etiam aliquam. At faucibus in id et",
+    "user": {
+      "avatar": "/images/avatars/06.jpg",
+      "name": "Alicia Howell",
+      "username": "alicia"
+    }
+  }
+]
